@@ -1,0 +1,22 @@
+BIN: ejecutables y datos
+BIN/data: ficheros de datos y restricciones
+
+FUENTES/src: ficheros de código fuente
+FUENTES/include: ficheros de cabeceras
+FUENTES/obj: ficheros objeto
+
+Dentro de include y src:
+	-busquedaLocal: funciones exclusivas para BL
+	-individual: representación de la clase Individual, que representa una solución.
+	-objetivo: funciones referentes a la función objetivo y su cálculo
+	-operacionesVector: funciones que realizan operaciones con vectores
+	-random: funciones para generar números aleatorios.
+	-trayectorias: funciones exclusivas para ES, BMB, ILS y ILS-ES.
+
+Cómo ejecutar el programa:
+	1.- Compilar con make
+	2.- Suponiendo que estamos en la carpeta software:
+		./BIN/practica1 ./BIN/data/(archivoDatos) ./BIN/data/(archivoRestricciones) (numeroClusters) (Semilla) (AlgoritmoAUsar)
+
+	AlgoritmoAUsar debe ser 0,1,2 ó 3.
+	0 = ES, 1 = BMB, 2 = ILS, 3 = ILS-ES

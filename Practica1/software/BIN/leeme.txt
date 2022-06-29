@@ -1,0 +1,21 @@
+BIN: ejecutables y datos
+BIN/data: ficheros de datos y restricciones
+
+FUENTES/src: ficheros de código fuente
+FUENTES/include: ficheros de cabeceras
+FUENTES/obj: ficheros objeto
+
+Dentro de include y src:
+	-busquedaLocal: funciones exclusivas para BL
+	-greedy: funciones exclusivas para COPKM
+	-objetivo: funciones referentes a la función objetivo y su cálculo
+	-operacionesVector: funciones que realizan operaciones con vectores
+	-random: funciones para generar números aleatorios.
+
+Cómo ejecutar el programa:
+	1.- Compilar con make
+	2.- Suponiendo que estamos en la carpeta Practica1:
+		./BIN/practica1 (archivoDatos) (archivoRestricciones) (numeroClusters) (Semilla) OPCIONAL(VersionGreedy)OPCIONAL
+
+	VersionGreedy puede valer 0,1,2 (otro valor o ningún valor será lo mismo que poner 0).
+	0=COPKM, 1=COPKM con 100 000 iteraciones, 2=COPKM_Set

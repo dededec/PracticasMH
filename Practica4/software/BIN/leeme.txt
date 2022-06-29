@@ -1,0 +1,19 @@
+BIN: ejecutables y datos
+BIN/data: ficheros de datos y restricciones
+
+FUENTES/src: ficheros de código fuente
+FUENTES/include: ficheros de cabeceras
+FUENTES/obj: ficheros objeto
+
+Dentro de include y src:
+	-busquedaLocal: funciones exclusivas para BL
+	-individual: representación de la clase Individual, que representa una solución.
+	-objetivo: funciones referentes a la función objetivo y su cálculo
+	-operacionesVector: funciones que realizan operaciones con vectores
+	-random: funciones para generar números aleatorios.
+	-nba: funciones sobre la metaheurística presentada.
+
+Cómo ejecutar el programa:
+	1.- Compilar con make
+	2.- Suponiendo que estamos en la carpeta software:
+		./BIN/practica4 ./BIN/data/(archivoDatos) ./BIN/data/(archivoRestricciones) (numeroClusters) (Semilla)
